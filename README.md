@@ -25,6 +25,15 @@ Nvim dotfiles depend on:
  - pylint
 
 Make sure to run `:PlugInstall` on nvim after cloning the dotfiles. 
+
+Clone Instructions:
+```
+alias tdot='/usr/bin/git --git-dir=$HOME/.tdot --work-tree=$HOME'
+git clone --bare https://github.com/Fowlron/TerminalDotfiles.git $HOME/.tdot
+tdot stash
+tdot checkout
+tdot config --local status.showUntrackedFiles no
+```
 ##
 ### Desktop Dotfiles
 TODO
