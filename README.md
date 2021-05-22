@@ -23,6 +23,7 @@ Nvim dotfiles depend on:
  - nodejs
  - npm
  - pylint
+ - universal ctags
 
 Make sure to run `:PlugInstall` on nvim after cloning the dotfiles. 
 

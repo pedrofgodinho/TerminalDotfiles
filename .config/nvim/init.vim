@@ -7,12 +7,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
-Plug 'tomasr/molokai'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'nfnty/nftables'
+Plug 'nfnty/vim-nftables'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -135,7 +135,9 @@ set number relativenumber
 set wildmenu
 set mouse=a
 set scrolloff=10
-colorscheme molokai
+let g:material_theme_style = 'darker'
+colorscheme onedark
+hi Normal guibg=NONE ctermbg=NONE
 set cursorline
 
 " Search

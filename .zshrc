@@ -115,8 +115,12 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export PATH="$HOME/bin:$PATH"
+
 alias l='ls -lh'
 alias ll='ls -lah'
 alias v='nvim'
 
 alias tdot='/usr/bin/git --git-dir=$HOME/.tdot/ --work-tree=$HOME'
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=239'
