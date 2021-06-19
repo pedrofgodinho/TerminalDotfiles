@@ -1,5 +1,5 @@
 # My Dotfiles
-This README is shared between my terminal dotfiles and my desktop dotfiles. Please reference the right section of the README for the repository your looking at.
+This README is shared between my terminal dotfiles and my desktop dotfiles. Please reference the right section of the README for the repository you're looking at.
 
 ## Terminal Dotfiles
 This repository has my dotfiles for zsh + ohmyzsh + powerlevel10k, a script to change between a simple (non-font dependent) and a complete (font dependent) powerlevel10k theme, and vim dotfiles.
