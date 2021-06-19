@@ -1,7 +1,7 @@
 # My Dotfiles
 This README is shared between my terminal dotfiles and my desktop dotfiles. Please reference the right section of the README for the repository your looking at.
-##
-### Terminal Dotfiles
+
+## Terminal Dotfiles
 This repository has my dotfiles for zsh + ohmyzsh + powerlevel10k, a script to change between a simple (non-font dependent) and a complete (font dependent) powerlevel10k theme, and vim dotfiles.
 
 ***If you clone this repository, make sure to use the `.changezsh.sh` script to select your powerlevel10k theme***
@@ -38,6 +38,15 @@ Alternatively, you can run the install script from git directly to install these
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/install.sh)"
 ```
 
-##
-### Desktop Dotfiles
+### Portable
+
+You can use the scripts provided in the .script directory to clone the repository into `/tmp`, install vim plugins, and alias vim to use the `.vimrc` in temp. A script is also provided to revert the changes:
+```bash
+# Start portable dotfiles
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/portable_start.sh)"
+# Revert changes
+/tmp/temp-dot/portable_exit.sh
+```
+
+## Desktop Dotfiles
 TODO
