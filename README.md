@@ -32,6 +32,12 @@ tdot stash
 tdot checkout
 tdot config --local status.showUntrackedFiles no
 ```
+
+Alternatively, you can run the install script from git directly to install these dotfiles:
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/install.sh)"
+```
+
 ##
 ### Desktop Dotfiles
 TODO
