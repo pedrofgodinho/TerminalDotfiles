@@ -18,5 +18,5 @@ fi
 
 alias vim='vim -Nu /tmp/temp-tdot/.vimrc'
 
-vim +PlugInstall +qall
+echo -e "\n" | vim +PlugInstall +qall
 
