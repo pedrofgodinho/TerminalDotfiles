@@ -45,7 +45,7 @@ You can use the scripts provided in the .script directory to clone the repositor
 # Start portable dotfiles
 source <(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/portable_start.sh)
 # Revert changes
-/tmp/temp-tdot/.scripts/portable_exit.sh
+source /tmp/temp-tdot/.scripts/portable_exit.sh
 ```
 
 ## Desktop Dotfiles
