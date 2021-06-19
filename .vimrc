@@ -1,26 +1,20 @@
 " ----- Plugins -----
 
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.tdot-vim')
 
-Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
-Plug 'preservim/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'nfnty/vim-nftables'
 Plug 'joshdick/onedark.vim'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
 " ----- CoC Extensions -----
-" - let g:coc_global_extensions = ['coc-marketplace', 'coc-json', 'coc-xml', 'coc-git', 'coc-xml', 'coc-css', 'coc-cssmodules', 'coc-clangd', 'coc-cmake', 'coc-html', 'coc-markdownlint', 'coc-java', 'coc-pyright']
-let g:coc_global_extensions = ['coc-pairs', 'coc-json', 'coc-python']
-
-
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " ----- CoC Setup -----
@@ -41,10 +35,7 @@ autocmd BufRead,BufNewFile * set signcolumn=yes
 autocmd FileType tagbar,nerdtree set signcolumn=no
 
 " Tab to cycle options
-inoremap <silent><expr> <TAB>
-    \ pumvisible() ? "\<C-n>" :
-    \ <SID>check_back_space() ? "\<TAB>" :
-    \ coc#refresh()
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<TAB>" : coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort

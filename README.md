@@ -19,13 +19,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-Nvim dotfiles depend on:
- - nodejs
- - npm
- - pylint
- - universal ctags
-
-Make sure to run `:PlugInstall` on nvim after cloning the dotfiles. 
+Make sure to run `:PlugInstall` on vim after cloning the dotfiles. 
 
 Clone Instructions:
 ```
