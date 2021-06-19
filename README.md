@@ -43,9 +43,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotf
 You can use the scripts provided in the .script directory to clone the repository into `/tmp`, install vim plugins, and alias vim to use the `.vimrc` in temp. A script is also provided to revert the changes:
 ```bash
 # Start portable dotfiles
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/portable_start.sh)"
+source <(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/portable_start.sh)
 # Revert changes
-/tmp/temp-dot/portable_exit.sh
+/tmp/temp-tdot/.scripts/portable_exit.sh
 ```
 
 ## Desktop Dotfiles
