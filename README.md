@@ -54,6 +54,10 @@ source /tmp/temp-tdot/.scripts/tdot/portable_exit.sh
 ## Desktop Dotfiles
 This repository has dotfiles for my desktop environment. I am currently running arch with i3 as a window manager. 
 
+[dotfiles1][/Pictures/dotfiles1.png]
+[dotfiles2][/Pictures/dotfiles2.png]
+[dotfiles3][/Pictures/dotfiles3.png]
+
 For help installing the dependencies for my dotfiles, please reference `.scripts/ddot/install.sh`. This script should install all dependencies and clone this repository into a new arch machine. Make sure you don't run it on your machine if it's not a fresh install of arch linux as I did not account for that when writing the script! Files will be overwritten! If you want to install my dotfiles on another system, the install script should be simple enough to read and understand what dependencies you need.
 
 You can run the install script with:
