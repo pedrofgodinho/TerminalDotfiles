@@ -61,3 +61,4 @@ You can run the install script with:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/DesktopDotfiles/main/.scripts/ddot/install.sh)"
 ```
 
+Rofi and polybar configurations modified from [k-vernooy](https://github.com/k-vernooy/dotfiles).
