@@ -9,7 +9,7 @@ if [ "$1" = "simple" ]; then
             exit
         fi
     fi
-    ln -s ~/.scripts/p10k.zsh.simple ~/.p10k.zsh
+    ln -s ~/.scripts/tdot/p10k.zsh.simple ~/.p10k.zsh
     echo Powerlevel10k Theme set to Simple
 elif [ "$1" = "complete" ]; then
     if [[ -L ~/.p10k.zsh ]]; then
@@ -20,7 +20,7 @@ elif [ "$1" = "complete" ]; then
             exit
         fi
     fi
-    ln -s ~/.scripts/p10k.zsh.complete ~/.p10k.zsh
+    ln -s ~/.scripts/tdot/p10k.zsh.complete ~/.p10k.zsh
     echo Powerlevel10k Theme set to Complete
 else
     echo Usage:
