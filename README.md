@@ -7,7 +7,7 @@ I often work on headless machines. On those, I'd like to have all my terminal re
 ## Terminal Dotfiles
 This repository has my dotfiles for zsh + ohmyzsh + powerlevel10k, a script to change between a simple (non-font dependent) and a complete (font dependent) powerlevel10k theme, and vim dotfiles.
 
-***If you clone this repository, make sure to use the `.changezsh.sh` script to select your powerlevel10k theme***
+***If you clone this repository, make sure to use the `changezsh.sh` script to select your powerlevel10k theme***
 
 Zsh + ohmyzsh + powerlevel10k dotfiles depend on exa being intalled, as well as the following:
 ```bash
@@ -54,4 +54,4 @@ source /tmp/temp-tdot/.scripts/portable_exit.sh
 ## Desktop Dotfiles
 This repository has dotfiles for my desktop environment. I am currently running arch with i3 as a window manager. 
 
-For help installing the dependencies for my dotfiles, please reference `./.scripts/ddot/install.sh`. This script should install all dependencies and clone this repository into a new arch machine. Make sure you don't run it on your machine if it's not a fresh install of arch linux as I did not account for that when writing the script! Files will be overwritten! If you want to install my dotfiles on another system, the install script should be simple enough to read and understand what dependencies you need.
+For help installing the dependencies for my dotfiles, please reference `.scripts/ddot/install.sh`. This script should install all dependencies and clone this repository into a new arch machine. Make sure you don't run it on your machine if it's not a fresh install of arch linux as I did not account for that when writing the script! Files will be overwritten! If you want to install my dotfiles on another system, the install script should be simple enough to read and understand what dependencies you need.
