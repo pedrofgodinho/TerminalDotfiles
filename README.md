@@ -1,6 +1,9 @@
 # My Dotfiles
 This README is shared between my terminal dotfiles and my desktop dotfiles. Please reference the right section of the README for the repository you're looking at.
 
+### Why are these files split?
+I often work on headless machines. On those, I'd like to have all my terminal related dotfiles, like vim and tmux configs, without the bloat of all my other dotfiles and configs. Because of that, I decided to split my dotfiles in two and have them in different repositories, so that I can clone one repo only when needed. It also allows others to copy my terminal dotfiles without messing with their desktops and vice-versa. 
+
 ## Terminal Dotfiles
 This repository has my dotfiles for zsh + ohmyzsh + powerlevel10k, a script to change between a simple (non-font dependent) and a complete (font dependent) powerlevel10k theme, and vim dotfiles.
 
@@ -49,4 +52,6 @@ source /tmp/temp-tdot/.scripts/portable_exit.sh
 ```
 
 ## Desktop Dotfiles
-TODO
+This repository has dotfiles for my desktop environment. I am currently running arch with i3 as a window manager. 
+
+For help installing the dependencies for my dotfiles, please reference `./.scripts/ddot/install.sh`. This script should install all dependencies and clone this repository into a new arch machine. Make sure you don't run it on your machine if it's not a fresh install of arch linux as I did not account for that when writing the script! Files will be overwritten! If you want to install my dotfiles on another system, the install script should be simple enough to read and understand what dependencies you need.
