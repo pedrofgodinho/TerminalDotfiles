@@ -117,9 +117,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/bin:$PATH"
 
-alias l='ls -lh'
-alias ll='ls -lah'
-alias v='nvim'
+alias l='exa -lgh --icons --group-directories-first'
+alias ll='exa -lagh --icons --group-directories-first'
 
 alias tdot='/usr/bin/git --git-dir=$HOME/.tdot/ --work-tree=$HOME'
 

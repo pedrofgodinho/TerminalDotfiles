@@ -6,7 +6,7 @@ This repository has my dotfiles for zsh + ohmyzsh + powerlevel10k, a script to c
 
 ***If you clone this repository, make sure to use the `.changezsh.sh` script to select your powerlevel10k theme***
 
-Zsh + ohmyzsh + powerlevel10k dotfiles depend on:
+Zsh + ohmyzsh + powerlevel10k dotfiles depend on exa being intalled, as well as the following:
 ```bash
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --unattended"
