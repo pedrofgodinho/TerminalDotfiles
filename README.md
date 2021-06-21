@@ -1,11 +1,16 @@
 # My Dotfiles
-This README is shared between my terminal dotfiles and my desktop dotfiles. Please reference the right section of the README for the repository you're looking at.
 
-### Why are these files split?
+![dotfiles1](/Pictures/dotfiles1.png)
+![dotfiles2](/Pictures/dotfiles2.png)
+![dotfiles3](/Pictures/dotfiles3.png)
+
+This README is shared between my [terminal dotfiles](https://github.com/pedrofgodinho/TerminalDotfiles) and my [desktop dotfiles](https://github.com/pedrofgodinho/DesktopDotfiles). Please reference the right section of the README for the repository you're looking at.
+
+### Why are these repositories split?
 I often work on headless machines. On those, I'd like to have all my terminal related dotfiles, like vim and tmux configs, without the bloat of all my other dotfiles and configs. Because of that, I decided to split my dotfiles in two and have them in different repositories, so that I can clone one repo only when needed. It also allows others to copy my terminal dotfiles without messing with their desktops and vice-versa. 
 
 ## Terminal Dotfiles
-This repository has my dotfiles for zsh + ohmyzsh + powerlevel10k, a script to change between a simple (non-font dependent) and a complete (font dependent) powerlevel10k theme, and vim dotfiles.
+This repository has my dotfiles for shell utilities and zsh. It configures zsh (with ohmyzsh and powerlevel10k), vim, and tmux. It also includes a script to change between a simple (non-font dependent) and a complete (font dependent) powerlevel10k theme.
 
 ***If you clone this repository, make sure to use the `changezsh.sh` script to select your powerlevel10k theme***
 
@@ -43,7 +48,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotf
 
 ### Portable
 
-You can use the scripts provided in the .script directory to clone the repository into `/tmp`, install vim plugins, and alias vim to use the `.vimrc` in temp. A script is also provided to revert the changes. Vim must be installed before this script is run. 
+You can use the scripts provided in the .script directory to clone the repository into `/tmp`, install vim plugins, and alias vim to use the `.vimrc` in temp. A script is also provided to revert the changes. Assumes vim is installed.
 ```bash
 # Start portable dotfiles
 source <(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/tdot/portable_start.sh)
@@ -54,15 +59,11 @@ source /tmp/temp-tdot/.scripts/tdot/portable_exit.sh
 ## Desktop Dotfiles
 This repository has dotfiles for my desktop environment. I am currently running arch with i3 as a window manager. 
 
-![dotfiles1](/Pictures/dotfiles1.png)
-![dotfiles2](/Pictures/dotfiles2.png)
-![dotfiles3](/Pictures/dotfiles3.png)
-
-For help installing the dependencies for my dotfiles, please reference `.scripts/ddot/install.sh`. This script should install all dependencies and clone this repository into a new arch machine. Make sure you don't run it on your machine if it's not a fresh install of arch linux as I did not account for that when writing the script! Files will be overwritten! If you want to install my dotfiles on another system, the install script should be simple enough to read and understand what dependencies you need.
+For help installing my dotfiles, please reference `.scripts/ddot/install.sh`. This script should install all dependencies and clone this repository into a new arch machine. Make sure you don't run it on your machine if it's not a fresh install of arch linux as I did not account for that when writing the script! Files will be overwritten! If you want to install my dotfiles on another system, the install script should be simple enough to read to understand what dependencies you need.
 
 You can run the install script with:
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/DesktopDotfiles/main/.scripts/ddot/install.sh)"
 ```
 
-Rofi and polybar configurations modified from [k-vernooy](https://github.com/k-vernooy/dotfiles).
+Rofi and polybar configurations modified from [k-vernooy's dotfiles](https://github.com/k-vernooy/dotfiles).
