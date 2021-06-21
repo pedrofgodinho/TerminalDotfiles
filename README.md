@@ -38,7 +38,7 @@ tdot config --local status.showUntrackedFiles no
 
 Alternatively, you can run the install script from git directly to install these dotfiles. Make sure to install vim and zsh before running this script!
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/tdot/install.sh)"
 ```
 
 ### Portable
@@ -46,12 +46,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotf
 You can use the scripts provided in the .script directory to clone the repository into `/tmp`, install vim plugins, and alias vim to use the `.vimrc` in temp. A script is also provided to revert the changes. Vim must be installed before this script is run. 
 ```bash
 # Start portable dotfiles
-source <(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/portable_start.sh)
+source <(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/tdot/portable_start.sh)
 # Revert changes
-source /tmp/temp-tdot/.scripts/portable_exit.sh
+source /tmp/temp-tdot/.scripts/tdot/portable_exit.sh
 ```
 
 ## Desktop Dotfiles
 This repository has dotfiles for my desktop environment. I am currently running arch with i3 as a window manager. 
 
 For help installing the dependencies for my dotfiles, please reference `.scripts/ddot/install.sh`. This script should install all dependencies and clone this repository into a new arch machine. Make sure you don't run it on your machine if it's not a fresh install of arch linux as I did not account for that when writing the script! Files will be overwritten! If you want to install my dotfiles on another system, the install script should be simple enough to read and understand what dependencies you need.
+
+You can run the install script with:
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/DesktopDotfiles/main/.scripts/ddot/install.sh)"
+```
+
