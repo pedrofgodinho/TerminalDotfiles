@@ -18,9 +18,11 @@ tdot config --local status.showUntrackedFiles no
 
 
 # Install vimplug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-echo -e "\n" | vim +PlugInstall +qall 
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+echo -e "\n" | nvim +PlugInstall +qall 
 
+# Set starting zsh theme
 ~/.scripts/tdot/changezsh.sh simple
 
 # Set shell to zsh

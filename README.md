@@ -7,10 +7,10 @@
 This README is shared between my [terminal dotfiles](https://github.com/pedrofgodinho/TerminalDotfiles) and my [desktop dotfiles](https://github.com/pedrofgodinho/DesktopDotfiles). Please reference the right section of the README for the repository you're looking at.
 
 ### Why are these repositories split?
-I often work on headless machines. On those, I'd like to have all my terminal related dotfiles, like vim and tmux configs, without the bloat of all my other dotfiles and configs. Because of that, I decided to split my dotfiles in two and have them in different repositories, so that I can clone one repo only when needed. It also allows others to copy my terminal dotfiles without messing with their desktops and vice-versa. 
+I often work on headless machines. On those, I'd like to have all my terminal related dotfiles, like nvim and tmux configs, without the bloat of all my other dotfiles and configs. Because of that, I decided to split my dotfiles in two and have them in different repositories, so that I can clone one repo only when needed. It also allows others to copy my terminal dotfiles without messing with their desktops and vice-versa. 
 
 ## Terminal Dotfiles
-This repository has my dotfiles for shell utilities and zsh. It configures zsh (with ohmyzsh and powerlevel10k), vim, and tmux. It also includes a script to change between a simple (non-font dependent) and a complete (font dependent) powerlevel10k theme.
+This repository has my dotfiles for shell utilities and zsh. It configures zsh (with ohmyzsh and powerlevel10k), nvim, and tmux. It also includes a script to change between a simple (non-font dependent) and a complete (font dependent) powerlevel10k theme.
 
 ***If you clone this repository, make sure to use the `changezsh.sh` script to select your powerlevel10k theme***
 
@@ -26,9 +26,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-Vim configuration depends on vimplug:
+NVim configuration depends on vimplug:
 ```bash
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 vim +PlugInstall +qall # Errors are normal, since the dotfiles ask vim for a colorscheme we've yet to install
 ```
 
@@ -46,15 +47,6 @@ Alternatively, you can run the install script from git directly to install these
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/tdot/install.sh)"
 ```
 
-### Portable
-
-You can use the scripts provided in the .script directory to clone the repository into `/tmp`, install vim plugins, and alias vim to use the `.vimrc` in temp. A script is also provided to revert the changes. Assumes vim is installed.
-```bash
-# Start portable dotfiles
-source <(curl -fsSL https://raw.githubusercontent.com/pedrofgodinho/TerminalDotfiles/main/.scripts/tdot/portable_start.sh)
-# Revert changes
-source /tmp/temp-tdot/.scripts/tdot/portable_exit.sh
-```
 
 ## Desktop Dotfiles
 This repository has dotfiles for my desktop environment. I am currently running arch with i3 as a window manager. 

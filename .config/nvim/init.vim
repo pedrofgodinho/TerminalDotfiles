@@ -35,7 +35,11 @@ autocmd BufRead,BufNewFile * set signcolumn=yes
 autocmd FileType tagbar,nerdtree set signcolumn=no
 
 " Tab to cycle options
-inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<TAB>" : coc#refresh()
+inoremap <silent><expr> <TAB> 
+    \ pumvisible() ? "\<C-n>" : 
+    \ <SID>check_back_space() ? "\<TAB>" : 
+    \ coc#refresh()
+
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
