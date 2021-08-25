@@ -135,6 +135,13 @@ colorscheme onedark
 hi Normal guibg=NONE ctermbg=NONE
 set cursorline
 
+" Folding
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+set foldmethod=indent
+nnoremap <space> za
+
 " Search
 set showmatch
 set incsearch
