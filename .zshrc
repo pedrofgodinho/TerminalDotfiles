@@ -123,4 +123,6 @@ alias ll='exa -lagh --icons --group-directories-first'
 alias tdot='/usr/bin/git --git-dir=$HOME/.tdot/ --work-tree=$HOME'
 alias ddot='/usr/bin/git --git-dir=$HOME/.ddot/ --work-tree=$HOME'
 
+test -f ~/.zshrc_ext && source ~/.zshrc_ext
+
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=239'
