@@ -1,3 +1,6 @@
+if [ -z "$TMUX" ]; then
+    exec tmux
+fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -126,3 +129,6 @@ alias ddot='/usr/bin/git --git-dir=$HOME/.ddot/ --work-tree=$HOME'
 test -f ~/.zshrc_ext && source ~/.zshrc_ext
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=239'
+
+
+
