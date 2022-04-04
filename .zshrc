@@ -118,6 +118,10 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Make history only update on shell exit
+unsetopt inc_append_history
+unsetopt share_history
+
 export PATH="$HOME/bin:$PATH"
 
 alias l='exa -lgh --icons --group-directories-first'
