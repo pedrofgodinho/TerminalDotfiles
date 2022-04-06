@@ -1,4 +1,4 @@
-if [ -z "$TMUX" ]; then
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     exec tmux
 fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
