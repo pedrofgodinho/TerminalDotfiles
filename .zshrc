@@ -122,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt inc_append_history
 unsetopt share_history
 
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 alias l='exa -lgh --icons --group-directories-first'
 alias ll='exa -lagh --icons --group-directories-first'
