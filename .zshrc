@@ -119,10 +119,10 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Make history only update on shell exit
-unsetopt inc_append_history
-unsetopt share_history
+# unsetopt inc_append_history
+# unsetopt share_history
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH"
 
 alias l='exa -lgh --icons --group-directories-first'
 alias ll='exa -lagh --icons --group-directories-first'
