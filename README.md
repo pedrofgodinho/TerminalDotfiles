@@ -33,6 +33,13 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 vim +PlugInstall +qall # Errors are normal, since the dotfiles ask vim for a colorscheme we've yet to install
 ```
 
+Tmux configuration (using [gpakosz's config](https://github.com/gpakosz/.tmux)):
+```
+cd
+git clone https://github.com/gpakosz/.tmux.git
+ln -s -f .tmux/.tmux.conf
+```
+
 Clone Instructions:
 ```bash
 alias tdot='/usr/bin/git --git-dir=$HOME/.tdot --work-tree=$HOME'
