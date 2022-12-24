@@ -1,5 +1,5 @@
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    exec tmux
+if command -v zellij &> /dev/null && [ -z "$ZELLIJ" ]; then
+    exec zellij
 fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -122,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 # unsetopt inc_append_history
 # unsetopt share_history
 
-export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:$PATH"
 
 alias l='exa -lgh --icons --group-directories-first'
 alias ll='exa -lagh --icons --group-directories-first'
